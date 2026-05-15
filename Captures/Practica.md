@@ -41,12 +41,12 @@ La xarxa personalitzada (`xarxa-botiga`) permet la resolució de noms per DNS in
 
 **Captura de pantalla 3: docker compose up -d**
 > Captura de la terminal després d'executar.
-![Docker Compose](/Captures/Compose.png)
+![Docker Compose](./Compose.PNG)
 
 **Captura de pantalla 4: Contenidors en execució (docker ps)**
 > Captura de la terminal després d'executar `docker ps`.
-![Docker PS](/Captures/Ps.png)
+![Docker PS](./Ps.PNG)
 
 **Captura de pantalla 5: Interfície Web Mongo Express**
 > Captura del navegador a http://localhost:8081.
-![Interfície Mongo Express](/Captures/Web.png)
+![Interfície Mongo Express](./Web.PNG)
