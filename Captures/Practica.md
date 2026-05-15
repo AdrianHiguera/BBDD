@@ -30,14 +30,16 @@ S'ha creat l'arbre de directoris i els fitxers base segons les especificacions d
 ### 1.2 Preguntes teòriques
 
 **1. Quina és la diferència entre `docker run` i `docker compose up`?**
-- `docker run` s'utilitza per aixecar un sol contenidor de forma individual.
-- `docker compose up` s'utilitza per orquestrar diversos serveis alhora definits en un fitxer YAML, gestionant automàticament les xarxes i els volums comuns.
+*   **`docker run`**: Serveix per aixecar contenidors d'un en un. Has d'escriure tota la configuració manualment cada vegada a la terminal.
+*   **`docker compose up`**: Serveix per aixecar diversos contenidors alhora. Tota la configuració es llegeix d'un fitxer (`docker-compose.yml`), cosa que facilita la gestió i evita errors.
 
 **2. Per a què serveix la instrucció `depends_on`? Garanteix que el servei estigui completament operatiu?**
-Defineix l'ordre d'arrencada dels contenidors. En aquest cas, fa que `mongo-express` s'esperi que `mongodb-botiga` s'hagi iniciat. No obstant això, no garanteix que la base de dades estigui a punt per rebre connexions (estat *ready*), només que el procés del contenidor s'ha llançat.
+*   Serveix per definir l'**ordre d'arrencada**. Per exemple, diu que la web no s'engegui fins que la base de dades hagi començat a carregar.
+*   **No ho garanteix**: Només indica que el contenidor s'ha iniciat. La base de dades pot trigar uns segons extres a estar "llesta" per rebre dades, encara que el contenidor ja estigui actiu.
 
 **3. Diferència entre xarxa bridge per defecte i xarxa personalitzada.**
-La xarxa personalitzada (`xarxa-botiga`) permet la resolució de noms per DNS intern. Això vol dir que els contenidors es poden comunicar fent servir el seu nom de servei (com `mongodb-botiga`) en lloc d'haver de conèixer la seva adreça IP privada.
+*   **Bridge per defecte**: Els contenidors estan aïllats i només es parlen si coneixes la seva IP (que és variable).
+*   **Xarxa personalitzada**: Permet que els contenidors es trobin pel seu **nom** (com `mongodb-botiga`). Docker gestiona la connexió automàticament sense haver de saber la IP.
 
 ---
 
