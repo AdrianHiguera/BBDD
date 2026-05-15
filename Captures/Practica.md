@@ -9,6 +9,8 @@
 S'ha comprovat el correcte funcionament de Docker, Docker Compose i Git al terminal local.
 
 **Captura de pantalla 1: Verificació de versions i Hello World**
+>Captura de Verificació
+
 ![Verificació Docker](./Verificació.PNG)
 
 ---
@@ -17,6 +19,8 @@ S'ha comprovat el correcte funcionament de Docker, Docker Compose i Git al termi
 S'ha creat l'arbre de directoris i els fitxers base segons les especificacions de la pràctica per garantir un entorn organitzat.
 
 **Captura de pantalla 2: Estructura de fitxers al VS Code**
+>Captura de l'Estructura
+
 ![Estructura de fitxers](./Estructura.PNG)
 
 ---
@@ -41,12 +45,15 @@ La xarxa personalitzada (`xarxa-botiga`) permet la resolució de noms per DNS in
 
 **Captura de pantalla 3: docker compose up -d**
 > Captura de la terminal després d'executar.
+
 ![Docker Compose](./Compose.PNG)
 
 **Captura de pantalla 4: Contenidors en execució (docker ps)**
 > Captura de la terminal després d'executar `docker ps`.
+
 ![Docker PS](./Ps.PNG)
 
 **Captura de pantalla 5: Interfície Web Mongo Express**
 > Captura del navegador a http://localhost:8081.
+
 ![Interfície Mongo Express](./Web.PNG)
