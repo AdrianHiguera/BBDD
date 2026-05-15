@@ -9,7 +9,7 @@
 S'ha comprovat el correcte funcionament de Docker, Docker Compose i Git al terminal local.
 
 **Captura de pantalla 1: Verificació de versions i Hello World**
-![Verificació Docker](/Captures/Verificació.png)
+![Verificació Docker](./Verificació.PNG)
 
 ---
 
@@ -17,7 +17,7 @@ S'ha comprovat el correcte funcionament de Docker, Docker Compose i Git al termi
 S'ha creat l'arbre de directoris i els fitxers base segons les especificacions de la pràctica per garantir un entorn organitzat.
 
 **Captura de pantalla 2: Estructura de fitxers al VS Code**
-![Estructura de fitxers](/Captures/Estructura.png)
+![Estructura de fitxers](./Estructura.PNG)
 
 ---
 
